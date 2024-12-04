@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>河北金骏丝网制品有限公司</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .header {
+            background-color: #1a5f7a;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 15px;
+        }
+
+        .header p {
+            font-size: 1.4em;
+        }
+
+        .nav {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 30px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            transition: all 0.3s ease;
+        }
+
+        .nav a:hover {
+            color: #1a5f7a;
+            background-color: #e9ecef;
+            border-radius: 4px;
+        }
+
+        .main {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section h2 {
+            font-size: 2.2em;
+            margin-bottom: 30px;
+            color: #1a5f7a;
+            text-align: center;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .product-card h3 {
+            font-size: 1.6em;
+            margin-bottom: 15px;
+            color: #1a5f7a;
+        }
+
+        .product-card p {
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-text {
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .contact-info {
+            background-color: #f8f9fa;
+            padding: 40px;
+            border-radius: 12px;
+            margin-top: 30px;
+            font-size: 1.2em;
+            line-height: 2;
+        }
+
+        .contact-info p {
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+            font-size: 1.1em;
+        }
+
+        /* 产品特点列表样式 */
+        .features-list {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .feature-item {
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .feature-item h3 {
+            color: #1a5f7a;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+
+        .feature-item p {
+            font-size: 1.1em;
+        }
+
+        /* 响应式布局调整 */
+        @media (max-width: 1200px) {
+            .main {
+                padding: 20px;
+            }
+            
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .nav a {
+                margin: 0 10px;
+                font-size: 1em;
+            }
+
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .feature-item {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>河北金骏丝网制品有限公司</h1>
+        <p>专业生产各类护角产品的综合性企业</p>
+    </header>
+
+    <nav class="nav">
+        <a href="#home">首页</a>
+        <a href="#products">产品展示</a>
+        <a href="#about">关于我们</a>
+        <a href="#contact">联系方式</a>
+    </nav>
+
+    <main class="main">
+        <section id="products" class="section">
+            <h2>产品展示</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="pvc.jpg" alt="PVC护角线" />
+                    <h3>PVC护角线</h3>
+                    <p>采用高品质PVC材质，耐磨损、防腐蚀、安装便捷</p>
+                </div>
+                <div class="product-card">
+                    <img src="tie.jpg" alt="铁制护角条" />
+                    <h3>铁制护角条</h3>
+                    <p>优质钢材打造，强度高，防锈处理，使用寿命长</p>
+                </div>
+                <div class="product-card">
+                    <img src="lv.jpg" alt="铝护角线" />
+                    <h3>铝护角线</h3>
+                    <p>采用航空铝材，轻质高强，外观精美，安装方便</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>关于我们</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>河北金骏丝网制品有限公司位于河北省衡水市安平县徐疃工业园区，是一家专业从事护角线护角条生产制造的现代化企业。</p>
+                    <p>我们专注于生产PVC、铁、铝护角线护角条，阴角阳角，带网护角滴水等产品，拥有先进的生产设备和专业的技术团队。</p>
+                    <p>公司始终坚持"质量第一，诚信为本"的经营理念，以优质的产品和完善的服务赢得了广大客户的信赖与支持。</p>
+                </div>
+                <img src="chang.jpg" alt="公司实景" class="about-image" />
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>产品特点</h2>
+            <div class="features-list">
+                <div class="feature-item">
+                    <h3>优质原材料</h3>
+                    <p>采用高品质原材料，确保产品品质</p>
+                </div>
+                <div class="feature-item">
+                    <h3>专业制造</h3>
+                    <p>先进设备，专业工艺，品质保证</p>
+                </div>
+                <div class="feature-item">
+                    <h3>规格齐全</h3>
+                    <p>多种规格可选，满足不同需求</p>
+                </div>
+                <div class="feature-item">
+                    <h3>售后保障</h3>
+                    <p>完善的售后服务体系，让您无忧购买</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>联系我们</h2>
+            <div class="contact-info">
+                <p><strong>联系电话：</strong>138-3385-8284</p>
+                <p><strong>电子邮箱：</strong>871922383@qq.com</p>
+                <p><strong>公司地址：</strong>河北省衡水市安平县徐疃工业园区</p>
+                <p><strong>欢迎咨询：</strong>如果您对我们的产品感兴趣或有任何疑问，欢迎随时联系我们，我们将为您提供专业的解答和服务。</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 河北金骏丝网制品有限公司 版权所有</p>
+    </footer>
+</body>
+</html>
